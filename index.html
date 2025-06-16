@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Ricardo M</a>
+            </div>
+            <nav id="nav" class="responsive">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/foto.jpg" alt="">
+            </div>
+            <h1>RICARDO MANTILLA</h1>
+            <h2>Estudiante Ingeniería en Software - Desarrollador de Software</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/jersonricardo.mantillap/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/ricardomantillasoft/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/RicardoMantilla999"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mi</h2>
+            <p><span>Hola, soy Ricardo</span> Soy un estudiante de los últimos niveles de la carrera de 
+                Ingeniería en Software, con un profundo interés por el desarrollo tecnológico y la programación.
+                 Me considero una persona dedicada, responsable y con una fuerte motivación por el aprendizaje 
+                 continuo. Disfruto enfrentar nuevos desafíos y mejorar constantemente mis conocimientos y habilidades. 
+                 Me apasiona la posibilidad de crear soluciones que aporten valor real y me comprometo con cada proyecto con entusiasmo, 
+                 disciplina y atención al detalle. </p>
+        </div>
+
+        <div class="fila">
+            <!-- DAtos Personales-->
+            <div class="col">
+                <h3>Datos Personales</h3>
+                <ul>
+                    <li>
+                        <strong>Cumpleaños</strong>
+                        01-05-1999
+                    </li>
+                    <li>
+                        <strong>Teléfono</strong>
+                        (+593) 959 019 704
+                    </li>
+                    <li>
+                        <strong>Email</strong>
+                        ricardo_mantilla999@hotmail.com
+                    </li>
+                    <li>
+                        <strong>Dirección</strong>
+                        C. Velasco Ibarra, Tabacundo, Pedro Moncayo, Pichincha
+                    </li>
+                </ul>
+            </div>
+            <!--Intereses-->
+            <div class="col">
+                <h3>Intereses</h3>
+                <div class="contenedor-intereses">
+                    <div class="interes">
+                        <i class="fa-solid fa-gamepad"></i>
+                        <span>JUEGOS</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-headphones"></i>
+                        <span>MÚSICA</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-plane"></i>
+                        <span>VIAJAR</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-brands fa-apple"></i>
+                        <span>MAC OS</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-person-hiking"></i>
+                        <span>DEPORTE</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-book"></i>
+                        <span>LIBROS</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-car"></i>
+                        <span>AUTOS</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-camera"></i>
+                        <span>FOTOS</span>
+                    </div>
+                </div>
+                <button>
+                    Descargar CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS-->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skills-->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>JavaScript</span>
+                        <div class="barra-skill">
+                            <div class="progreso javascript">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso htmlcss">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Java</span>
+                        <div class="barra-skill">
+                            <div class="progreso java">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>PHP</span>
+                        <div class="barra-skill">
+                            <div class="progreso php">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Node</span>
+                        <div class="barra-skill">
+                            <div class="progreso node">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Angular</span>
+                        <div class="barra-skill">
+                            <div class="progreso angular">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso bdd">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills-->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Resolución de problemas</span>
+                        <div class="barra-skill">
+                            <div class="progreso rproblemas">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Comunicación afectiva</span>
+                        <div class="barra-skill">
+                            <div class="progreso comunicacion">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso equipo">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso creatividad">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicacion</span>
+                        <div class="barra-skill">
+                            <div class="progreso dedicacion">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso management">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>Aprendizaje Contínuo</span>
+                        <div class="barra-skill">
+                            <div class="progreso aprendizaje">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM-->
+    <section class="curriculum" id="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Ingeniería en Software</h4>
+                        <span class="casa">Universidad Técnica del Norte</span>
+                        <span class="fecha">2018 - 2024</span>
+                       
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Bachiller en Ciencias</h4>
+                        <span class="casa">Unidad Educativa Tabacundo</span>
+                        <span class="fecha">2012 - 2017</span>
+                        
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col derecha">
+                    <h3>Experiencia</h3>
+                    <div class="item der">
+                        <h4>Desarrollador de Software</h4>
+                        <span class="casa">Cooperativa de Ahorro y Crédito Mujeres Unidad CACMU</span>
+                        <span class="fecha">2023 - 2024</span>
+                        <p>Formé parte del equipo encargado del desarrollo y mejora de módulos dentro de la aplicación 
+                            financiera interna de la cooperativa. Utilizamos Scriptcase, una plataforma de desarrollo rápido,
+                             para construir interfaces web conectadas a base de datos, generando aplicaciones en PHP de forma eficiente. 
+                             Esta experiencia fortaleció mis habilidades en el desarrollo de soluciones orientadas a la gestión financiera 
+                             y me permitió trabajar con metodologías orientadas al cumplimiento de objetivos institucionales.
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portafolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/login - FutGol.png" alt="">
+                    <div class="overlay">
+                        <h3>FutGol</h3>
+                        <p>Aplicación Web para la Gestión de Campeonatos de Fútbol</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/portada - mecanica Trujillo.png" alt="">
+                    <div class="overlay">
+                        <h3>Mecánica Trujillo</h3>
+                        <p>Página Web para una Mecánica Automotriz</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- SECCION CONTACTO -->
+    <section class="contacto" id="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <div class="col">
+                    <input type="text" placeholder="Tú nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Tabacundo, Barrio San Blas
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                0959019704
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                ricardo_mantilla999@hotmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/jersonricardo.mantillap/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/ricardomantillasoft/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/RicardoMantilla999"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
