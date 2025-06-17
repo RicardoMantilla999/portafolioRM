@@ -47,5 +47,7 @@ function descargarCV() {
     const link = document.createElement('a');
     link.href = 'docs/CV Mantilla Ricardo.pdf'; // Adjust the path as necessary
     link.download = 'CV-RicardoMantilla.pdf';
+    document.body.appendChild(link);
     link.click();
+    document.body.removeChild(link);
 }
